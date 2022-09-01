@@ -1,3 +1,4 @@
+package ChatApp.Client;
 
 import java.net.*;
 import java.io.*;

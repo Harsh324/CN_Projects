@@ -2,6 +2,7 @@ package ChatApp.Client;
 
 
 import java.net.*;
+import java.util.Scanner;
 import java.io.*;
 
 
@@ -55,10 +56,14 @@ public class Client {
 
     public static void main(String[] args) {
 		// Input the Host
-		String host = args[0];
+		// String host = args[0];
+        System.out.println("Input host address");
+        Scanner sc = new Scanner(System.in);
+        String host = sc.nextLine();
 
         // Input the port
-		int port = Integer.parseInt(args[1]);
+        System.out.println("Input Port number");
+		int port = sc.nextInt();
 
 		Client client = new Client(host, port);
 		client.Run();
