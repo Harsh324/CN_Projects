@@ -1,5 +1,8 @@
 package ChatApp.Server;
 
+/*
+ * Importing important packages
+ */
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -65,7 +68,11 @@ public class Users extends Thread
     {
         if(server.IfUsers())
         {
-            writer.println("Active users are : ");
+            writer.println("Active users are : " + server.getUser_ids());
+        }
+        else
+        {
+            writer.println("Active users list is empty");
         }
     }
 }

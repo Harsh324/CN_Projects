@@ -93,14 +93,25 @@ public class Server
 			}
 		}
 	}
+    /*
+     * method to get all active users list
+     */
+    Set<String> getUser_ids() {
+		return this.User_IDs;
+	}
 
 
+    /*
+     * Method to check if User_id set is not empty
+     */
     boolean IfUsers()
     {
         if(this.User_IDs.isEmpty())
             return false;
         return true;
     }
+
+
 
     public static void main(String args[])
     {
